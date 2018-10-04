@@ -71,6 +71,9 @@ int main(int argc, char *argv[])
     // Close remaining file
     fclose(newimage);
 
+    // Free up memory
+    free(buffer);
+
     // Success
     return 0;
 }
